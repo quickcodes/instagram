@@ -4,6 +4,7 @@ import 'package:instagram/pages/home.dart';
 import 'package:instagram/pages/like.dart';
 import 'package:instagram/pages/reel.dart';
 import 'package:instagram/pages/search.dart';
+import 'package:instagram/pages/shop.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -25,7 +26,8 @@ class _HomePageState extends State<HomePage> {
     UserHome(),
     UserSearch(),
     UserReel(),
-    UserLike(),
+    // UserLike(),
+    UserShop(),
     UserAccount(),
   ];
 
