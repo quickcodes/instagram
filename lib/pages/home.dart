@@ -36,27 +36,52 @@ class UserHome extends StatelessWidget {
           ])
         ]),
       ),
-      body: Column(children: [
-        // Stories
-        Container(
-          height: 130,
-          child: ListView.builder(
-            scrollDirection: Axis.horizontal,
-            itemCount: people.length,
-            itemBuilder: (context, index) {
-              return BubbleStories(name: people[index]);
-            },
+      body: Column(
+        children: [
+          // Stories
+          Container(
+            height: 130,
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: people.length,
+              itemBuilder: (context, index) {
+                return BubbleStories(name: people[index]);
+              },
+            ),
           ),
-        ),
-        // Posts
-        Expanded(
-          child: ListView.builder(
+          // Posts
+          Expanded(
+            child: ListView.builder(
               itemCount: people.length,
               itemBuilder: ((context, index) {
                 return UserPost(name: people[index]);
               })),
-        ),
-      ]),
+          ),
+        ],
+      ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
