@@ -16,12 +16,12 @@ class BubbleStories extends StatelessWidget {
             Container(
               width: 60,
               height: 60,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 shape: BoxShape.circle,
                 color: Colors.grey,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Text(name),

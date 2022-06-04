@@ -11,22 +11,19 @@ class UserShop extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         title:
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween, 
-              children: [
-                Text("Shop"),
-                Row(
-                  children: [
-                    Icon(Icons.calendar_month),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Icon(Icons.menu),
-                  ],
-                )
-              ]
-            ),
-        ),
+            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+          const Text("Shop"),
+          Row(
+            children: const [
+              Icon(Icons.calendar_month),
+              SizedBox(
+                width: 10,
+              ),
+              Icon(Icons.menu),
+            ],
+          )
+        ]),
+      ),
       body: Column(
         children: [
           Padding(
@@ -34,7 +31,7 @@ class UserShop extends StatelessWidget {
             child: ClipRRect(
               borderRadius: BorderRadius.circular(8),
               child: Container(
-                padding: EdgeInsets.all(8),
+                padding: const EdgeInsets.all(8),
                 color: Colors.grey[400],
                 child: Row(children: [
                   Icon(
@@ -51,17 +48,11 @@ class UserShop extends StatelessWidget {
                   )
                 ]),
               ),
-              
             ),
-            
-            
           ),
-          Expanded(child: ShopGrid())
+          const Expanded(child: ShopGrid())
         ],
-        
-        
       ),
-      
     );
   }
 }

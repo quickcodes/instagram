@@ -13,7 +13,7 @@ class UserSearch extends StatelessWidget {
         title: ClipRRect(
           borderRadius: BorderRadius.circular(8),
           child: Container(
-            padding: EdgeInsets.all(8),
+            padding: const EdgeInsets.all(8),
             color: Colors.grey[400],
             child: Row(
               children: [
@@ -31,7 +31,7 @@ class UserSearch extends StatelessWidget {
           ),
         ),
       ),
-      body: ExploreGrid(),
+      body: const ExploreGrid(),
     );
   }
 }

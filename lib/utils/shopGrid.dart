@@ -8,10 +8,10 @@ class ShopGrid extends StatelessWidget {
     return GridView.builder(
         itemCount: 30,
         gridDelegate:
-            SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+            const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
         itemBuilder: (context, index) {
           return Padding(
-            padding: EdgeInsets.all(2.0),
+            padding: const EdgeInsets.all(2.0),
             child: Container(
               color: Colors.pink[100],
             ),

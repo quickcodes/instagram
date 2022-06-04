@@ -25,11 +25,11 @@ class UserHome extends StatelessWidget {
         elevation: 0,
         title:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-          Text("Instagram"),
-          Row(children: [
+          const Text("Instagram"),
+          Row(children: const [
             Icon(Icons.add),
             Padding(
-              padding: const EdgeInsets.all(24.0),
+              padding: EdgeInsets.all(24.0),
               child: Icon(Icons.favorite),
             ),
             Icon(Icons.share),
@@ -49,8 +49,8 @@ class UserHome extends StatelessWidget {
           ),
         ),
         // Posts
-        Expanded(child: 
-          ListView.builder(
+        Expanded(
+          child: ListView.builder(
               itemCount: people.length,
               itemBuilder: ((context, index) {
                 return UserPost(name: people[index]);

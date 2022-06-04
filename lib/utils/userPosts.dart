@@ -28,16 +28,16 @@ class UserPost extends StatelessWidget {
                       shape: BoxShape.circle,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Text(
                     name,
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                    style: const TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ],
               ),
-              Icon(Icons.menu)
+              const Icon(Icons.menu)
             ],
           ),
         ),
